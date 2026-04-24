@@ -1,0 +1,32 @@
+# Dependências
+node_modules/
+.pnpm-store/
+
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e Cache
+*.log
+.eslintcache
+.cache/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Builds e Distribuição
+dist/
+build/
+out/
+
+# Variáveis de Ambiente
+.env
+.env.local
+.env.*.local
+
+# Dependências
+node_modules/
+.pnpm-store/
