@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu sabo! - Desafio de sabimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Eu sabo!</h1>
+            <p>Testando seus sabimentos com duvidas duvidosas do Einstein !</p>
+            <img src="ainstain.jpg" width="450px" height="250px">
+        </header>
+
+        <main id="game-container">
+            <section id="setup-screen" class="screen active">
+                <h2>Configurações do conhecimento</h2>
+                <div class="form-group">
+                    <label for="difficulty">Nivel de sabiencia 🧠:</label>
+                    <select id="difficulty">
+                        <option value="easy">Pocas 🥺</option>
+                        <option value="medium">Maioumeno 🤔</option>
+                        <option value="hard">Muintas 💀</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Quantas tu quer?:</label>
+                    <input type="number" id="amount" value="5" min="5" max="20">
+                </div>
+                <button id="start-btn" class="btn">Responde ai seu comedia</button>
+            </section>
+            <section id="loading-screen" class="screen">
+                <div class="loader"></div>
+                <p>Feijao com farinha...</p>
+            </section>
+            <section id="question-screen" class="screen">
+                <div class="progress-bar">
+                    <div id="progress" style="width: 0%;"></div>
+                </div>
+                <div id="question-container">
+                    <h3 id="question-text">Carregamento...</h3>
+                    <div id="options-container" class="options-grid">
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <span id="question-counter">Uma de algumas</span>
+                    <span id="current-score">Pontuamento: 0</span>
+                </div>
+            </section>
+            <section id="result-screen" class="screen">
+                <h2>Acaba aqui e agora(Farmei muita aura agora💪😎🔥🔥🔥)!</h2>
+                <div class="final-stats">
+                    <p id="final-score-text">Nivel de sabimento 0 de 5 kkkkkkkkkkkkkkkkkk.</p>
+                    <div id="score-percentage" class="percentage-circle">0%</div>
+                </div>
+                <button id="restart-btn" class="btn">Cai pra dentro de volta bobao!</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
